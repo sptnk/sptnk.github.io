@@ -39,10 +39,8 @@
 <body>
   <div class='wpage-search-box' align='center'>
     <img class='wpage-search-logo' src='https://cloud.githubusercontent.com/assets/10798602/5992752/a330309e-aa4f-11e4-8ee5-022235dca8d4.png'></img>
-    <form action='http://sputnik.ru/search' method='get'>
-	  <input class='wpage-search-input' type='text' name='q'></input><br><br>
-	  	<button type='submit' class='wpage-search-button'>Поиск</button>
-	</form>
+	  <input id='input' class='wpage-search-input' type='text' name='q'></input><br><br>
+	  <button type='button' onclick='document.location.href="http://sputnik.ru/search?q="+encodeURIComponent(document.getElementById("input").value);' class='wpage-search-button'>Поиск</button>
   </div>
 </body>
 </html>
